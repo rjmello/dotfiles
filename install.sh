@@ -4,6 +4,7 @@ DOTFILES="
 	bashrc
 	bash_logout
 	gitconfig
+	profile
 	tmux.conf
 "
 
