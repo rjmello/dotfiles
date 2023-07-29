@@ -1,8 +1,6 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 
 # Ref: https://serverfault.com/questions/741670/rsync-files-to-a-kubernetes-pod
-
 
 if [[ -z $KRSYNC_STARTED ]]; then
     export KRSYNC_STARTED=true
