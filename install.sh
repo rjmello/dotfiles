@@ -2,6 +2,7 @@
 
 DOTFILES="
 	bashrc
+	bash_completions.d
 	bash_logout
 	gitconfig
 	profile

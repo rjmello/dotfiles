@@ -117,6 +117,12 @@ if ! shopt -oq posix; then
 fi
 
 
+# Bash completions
+for bcfile in ~/.bash_completions.d/* ; do
+  source $bcfile
+done
+
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
