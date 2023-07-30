@@ -123,11 +123,15 @@ for bcfile in ~/.bash_completions.d/* ; do
 done
 
 
+# Profiles
+if [[ -d ~/.profiles ]]; then
+    for profile in ~/.profiles/*; do
+        source $profile
+    done
+fi
+
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-# Globus
-[[ -s "$HOME/.globus_profile" ]] && source "$HOME/.globus_profile"
