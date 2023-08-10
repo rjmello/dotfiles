@@ -117,6 +117,13 @@ if ! shopt -oq posix; then
 fi
 
 
+###############
+
+
+# Aliases
+alias pip-uninstall-all="pip uninstall -y -r <(pip freeze)"
+
+
 # Bash completions
 for bcfile in ~/.bash_completions.d/* ; do
   source $bcfile
